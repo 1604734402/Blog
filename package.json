@@ -5,14 +5,27 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"vuepress dev docs",
-    "build":"vuepress build docs",
-    "deploy":"zsh deploy.sh"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "zsh deploy.sh"
   },
   "devDependencies": {
-    "vuepress": "^0.14.8"
+    "@vuepress/plugin-back-to-top": "^1.5.0",
+    "vuepress": "^1.0.0-rc.1",
+    "vuepress-plugin-cursor-effects": "^0.0.4",
+    "vuepress-theme-reco": "^1.4.5"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-loading-page": "^1.4.0",
+    "@vuepress/shared-utils": "^1.5.0",
+    "core-js": "^2.4.0",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.5.1",
+    "leancloud-storage": "^4.5.3",
+    "toml": "^3.0.0",
+    "valine": "^1.4.14"
+  }
 }

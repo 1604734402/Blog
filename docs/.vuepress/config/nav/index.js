@@ -1,12 +1,20 @@
 module.exports = [
-    { text: '主页', link: '/' },
-    {
-        text: '分类',
-        ariaLabel: 'Language Menu',
-        items: [
-            { text: '随笔', link: '/views/随笔/' },
-            { text: '前端', link: '/views/前端/' },
-            { text: '后端', link: '/views/后端/' }
-        ]
-    },
+  {text: '主页', link: '/'},
+  {
+    text: '基础', icon: 'reco-document',
+    items: [
+      {text: '数据结构&算法', link: '/views/algorithm/'},
+      {text: 'Java', link: '/views/rearEnd/java/'},
+    ]
+  },
+  {text: '时间线', link: '/timeline/', icon: 'reco-date'},
+  {text: '关于我', link: '/views/other/about'},
+  {
+    text: '更多',
+    icon: 'reco-message',
+    items: [
+      {text: 'Github', link: 'https://github.com/1604734402', icon: 'reco-github'},
+      {text: 'bilibili', link: 'https://space.bilibili.com/56590486', icon: 'reco-bilibili'}
+    ]
+  }
 ]
